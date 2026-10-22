@@ -75,15 +75,15 @@ MACOSX_DEPLOYMENT_TARGET = "26.0"
 
 [[tool.cibuildwheel.overrides]]
 select = ["*-manylinux_*"]
-before-all = "yum -y install librime-devel"
+before-all = "yum -y install librime-devel git"
 
 [[tool.cibuildwheel.overrides]]
 select = ["*-manylinux_armv7l"]
-before-all = "apt-get -y install librime-dev"
+before-all = "apt-get -y install librime-dev git"
 
 [[tool.cibuildwheel.overrides]]
 select = ["*-musllinux_*"]
-before-all = "apk add librime-dev clang-dev"
+before-all = "apk add librime-dev clang-dev git"
 
 [[tool.cibuildwheel.overrides]]
 select = ["*-macosx_*"]
