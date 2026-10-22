@@ -82,7 +82,7 @@ jobs:
           install: |
             mingw-w64-x86_64-pkg-config mingw-w64-x86_64-librime
             mingw-w64-x86_64-gcc mingw-w64-x86_64-ninja
-            mingw-w64-x86_64-uv git
+            mingw-w64-x86_64-uv
       - name: Install dependencies
         if: runner.os == 'Linux'
         run: |
